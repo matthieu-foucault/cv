@@ -1,0 +1,139 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[utf8]{inputenc}
+
+% personal data
+\firstname{Matthieu}
+\familyname{Foucault}
+\title{Docteur en Informatique}                          % optional, remove / comment the line if not wanted
+\mobile{+336.76.45.63.28}                     % optional, remove / comment the line if not wanted
+\phone{+335.40.00.35.54}                      % optional, remove / comment the line if not wanted
+\email{foucault.matthieu@gmail.com}                          % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Domaine de recherche} % (fold)
+\label{sec:research_interests}
+
+\begin{itemize}
+	\item Génie logiciel, fouille de données dans les dépôts logiciels, études empiriques liées à la qualité logicielle, collaboration assistée par ordinateur.
+	\item Méthodologie des études empiriques primaires et secondaires.
+\end{itemize}
+
+
+% section research_interests (end)
+
+\section{Formation}
+
+\cventry{2012-2015}{Doctorat en Informatique}{Université de Bordeaux}{LaBRI}{}{Organisation des développeurs \emph{open-source} et fiabilité logicielle\\
+Thèse dirigée par Xavier Blanc et Jean-Rémy Falleri\\
+Jury de soutenance: Benoit Baudry, Stéphane Ducasse, Marianne Huchard, Guy Melançon}  % arguments 3 to 6 can be left empty
+
+\cventry{2012}{Master en Informatique}{Université de Bordeaux}{}{}{Génie logiciel -- Conduite de projets}
+
+
+\section{Expérience professionnelle}
+\cventry{Avril - Septembre 2012}{CEA \emph{(Commissariat à l'énergie atomique et aux énergies alternatives)}}{Ingénieur stagiaire, recherche et développement}{}{}{Conception d'une approche permettant l'adaptation d'un gestionnaire de versions (Git) à un langage dédié de modélisation.}
+\cventry{Avril - Juillet 2010}{Keyland IT, Burgos, Espagne}{Développeur stagiaire}{}{}{Développement d'un ensemble de modules d'une plateforme de gestion de projets de génie civil.}
+
+
+\section{Publications de recherche}
+
+
+\cvitem{}{\textbf{Matthieu Foucault}, Marc Palyart, Xavier Blanc, Gail C. Murphy and Jean-Rémy Falleri.
+	\emph{Impact of developer turnover on quality in open-source software.}
+	10th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE), 2015.}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Cédric Teyton, David Lo, Xavier Blanc and Jean-Rémy Falleri.
+	\emph{On the usefulness of ownership metrics in open-source software projects.}
+	Information \& Software Technology (IST), 2015.}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Jean-Rémy Falleri and Xavier Blanc.
+	\emph{Code ownership in open-source software.}
+	18th International Conference on Evaluation and Assessment in Software Engineering (EASE), 2014.}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Marc Palyart, Jean-Rémy Falleri, Xavier Blanc.
+	\emph{Computing contextual metric thresholds.}
+	29th Symposium On Applied Computing (SAC), 2014.}
+
+
+\newpage
+
+\section{Autre expérience académique}
+\cvitem{Mars à Mai 2015}{Séjour de recherche -- Université de Colombie Britannique, Vancouver, Canada -- Encadrement: Pr. Gail C. Murphy}
+\cvitem{Août 2013}{Participation à une école d'été: \emph{Méthodes de recherche empirique en informatique} - Université technique du Danemark, Kongens Lyngby, Danemark - Enseignant: Pr. Harald Störrle}
+
+
+
+\section{Enseignement}
+\cventry{2015}{Programmation Web}{Master 2 Informatique - Université de Bordeaux}{}{}{Cours et travaux dirigés, 42h}
+\cventry{2014-2015}{Conduite de projets}{Master 2 Informatique - Université de Bordeaux}{}{}{Travaux dirigés, 72h}
+\cventry{2014}{Co-encadrement d'un \textbf{stagiaire de Master recherche}}{LaBRI - Université de Bordeaux}{}{}{}
+\cventry{2012-2014}{Web-Services et XML}{Master 1 Miage - Université de Bordeaux}{}{}{Cours et travaux dirigés, 38h}
+\cventry{2012-2014}{Développement d’applications pour appareils mobiles}{2ème année filière télécommunication - Enseirb-Matmeca - Bordeaux INP}{}{}{Enseignement intégré, 30h}
+
+\section{Références}
+\setlength{\hintscolumnwidth}{4cm}
+\cvitem{\textbf{Xavier Blanc}}{Professeur, University of Bordeaux, France }
+\cvitem{}{\url{http://www.labri.fr/perso/xblanc/}}
+\cvitem{}{xavier.blanc@labri.fr}
+\cvitem{\textbf{Jean-Rémy Falleri}}{Maître de conférences, University of Bordeaux, France}
+\cvitem{}{\url{http://www.labri.fr/perso/falleri/}}
+\cvitem{}{falleri@labri.fr}
+\cvitem{\textbf{Gail C. Murphy}}{Professeure, University of British Columbia, Canada}
+\cvitem{}{\url{http://www.cs.ubc.ca/~murphy/}}
+\cvitem{}{murphy@cs.ubc.ca}
+\cvitem{\textbf{David Lo}}{Professeur Assistant, School of Information Systems, Singapore Management University}
+\cvitem{}{\url{http://www.mysmu.edu/faculty/davidlo/}}
+\cvitem{}{davidlo@smu.edu.sg}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\end{document}

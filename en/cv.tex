@@ -1,0 +1,141 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[utf8]{inputenc}
+
+% personal data
+\firstname{Matthieu}
+\familyname{Foucault}
+\title{Ph.D in Software Engineering}          % optional, remove / comment the line if not wanted
+\mobile{+336.76.45.63.28}                     % optional, remove / comment the line if not wanted
+\phone{+335.40.00.35.54}                      % optional, remove / comment the line if not wanted
+\email{foucault.matthieu@gmail.com}           % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Research Interests} % (fold)
+\label{sec:research_interests}
+
+\begin{itemize}
+	\item Software Engineering, mining software repositories, computer-supported cooperative work.
+	\item Methodology of primary and secondary empirical research.
+\end{itemize}
+
+
+% section research_interests (end)
+
+\section{Education}
+
+\cventry{2012-2015}{Ph.D. in Computer Science \emph{(defense planned November 30)}}{University of Bordeaux - LaBRI, Bordeaux, France}{}{}{Open-source developers organisation and software reliability\\
+	Advisors: Dr. Jean-Rémy Falleri and Pr. Xavier Blanc}  % arguments 3 to 6 can be left empty
+
+\cventry{March-May 2015}{Visiting student -- Software Practices Lab}{University of British Columbia, Vancouver, Canada}{}{}{Developer activity and software quality in open-source\\
+Advisors: Dr. Marc Palyart and Pr. Gail C. Murphy}
+
+\cventry{2012}{M.Sc. in Computer Science}{University of Bordeaux, Bordeaux, France}{}{}{Software Engineering - Project Management}
+
+
+\section{Professional Experience}
+\cventry{April - September 2012}{CEA \emph{(French Atomic Energy and Alternative Energies
+Commission)}}{R\&D Engineer Intern}{}{}{Designed an approach to adapt an existing version control system (Git) to a domain-specific modelling language.}
+\cventry{April - July 2010}{Keyland IT, Burgos, Spain}{Intern Developer}{}{}{Developed a set of modules for a civil engineering project management system.}
+
+
+\section{Selected Publications}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Marc Palyart, Xavier Blanc, Gail C. Murphy and Jean-Rémy Falleri.
+	\emph{Impact of developer turnover on quality in open-source software.}
+10th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE), 2015.}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Cédric Teyton, David Lo, Xavier Blanc and Jean-Rémy Falleri.
+	\emph{On the usefulness of ownership metrics in open-source software projects.}
+	 Information \& Software Technology (IST), 2015.}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Jean-Rémy Falleri and Xavier Blanc.
+\emph{Code ownership in open-source software.}
+18th International Conference on Evaluation and Assessment in Software Engineering (EASE), 2014.}
+
+\cvitem{}{\textbf{Matthieu Foucault}, Marc Palyart, Jean-Rémy Falleri, Xavier Blanc.
+\emph{Computing contextual metric thresholds.}
+29th Symposium On Applied Computing (SAC), 2014.}
+
+% \cvitem{}{Jean-Rémy Falleri, Cédric Teyton, \textbf{Matthieu Foucault}, Marc Palyart, Floréal Morandat and Xavier Blanc\\
+% \emph{The Harmony Platform.}\\
+% Technical Report, (see \url{http://arxiv.org/pdf/1306.6262.pdf}), 2013.}
+
+%\cvitem{}{\textbf{Matthieu Foucault}, Sébastien Barbier, David Lugato.
+%\emph{Enhancing version control with domain-specific semantics.}
+%5th International Workshop on Modeling in Software Engineering (MiSE), 2013.}
+
+\newpage
+
+\section{Academic Experience}
+\cvitem{2015}{Teaching: Web development with the MEAN stack, University of Bordeaux}
+\cvitem{2014}{Supervising one graduate student for 5 months, University of Bordeaux}
+\cvitem{2012-2014}{Teaching: REST architecture and Java Servlets, University of Bordeaux}
+\cvitem{August 2013}{Participation in Summer School: Empirical Research Methods in Informatics - Technical University of Denmark, Kongens Lyngby, Denmark - Teacher: Prof Dr. Harald Störrle}
+
+\section{References}
+\setlength{\hintscolumnwidth}{4cm}
+	\cvitem{\textbf{Xavier Blanc}}{Professor, University of Bordeaux, France }
+	\cvitem{}{\url{http://www.labri.fr/perso/xblanc/}}
+	\cvitem{}{xavier.blanc@labri.fr}
+	\cvitem{\textbf{Jean-Rémy Falleri}}{Associate Professor, University of Bordeaux, France}
+	\cvitem{}{\url{http://www.labri.fr/perso/falleri/}}
+	\cvitem{}{falleri@labri.fr}
+	\cvitem{\textbf{Gail C. Murphy}}{Professor, University of British Columbia, Canada}
+	\cvitem{}{\url{http://www.cs.ubc.ca/~murphy/}}
+	\cvitem{}{murphy@cs.ubc.ca}
+	\cvitem{\textbf{David Lo}}{Assistant Professor in School of Information Systems, Singapore Management University}
+	\cvitem{}{\url{http://www.mysmu.edu/faculty/davidlo/}}
+	\cvitem{}{davidlo@smu.edu.sg}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\end{document}
